@@ -253,6 +253,7 @@ body {
         background: #659BD1;
         color: white; }
   .panel-home .section6 .container .row .sec6-right {
+    overflow: hidden;
     text-align: center;
     height: 30em; }
     @media only screen and (max-width: 767px) {
@@ -268,7 +269,8 @@ body {
           display: none !important; } }
     .panel-home .section6 .container .row .sec6-right #sec6-chart2 {
       width: 100%;
-      display: none; }
+      display: none;
+      margin-bottom: 1em; }
       @media only screen and (max-width: 767px) {
         .panel-home .section6 .container .row .sec6-right #sec6-chart2 {
           display: block !important; } }
