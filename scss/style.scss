@@ -99,11 +99,11 @@ body{
             margin: 0 auto;
             h1{
                 font-size: 48px;
-                text-align: center;
+                
                 font-size: 3em;
                 color: white;
                 font-weight: bolder;
-                margin-bottom: 2em;
+                margin: 1em auto;
             }
             .ani1{
                 animation: bounceInUp 1.5s linear forwards;
@@ -153,6 +153,9 @@ body{
                         background: $color-blue;
                         color: $color-white;
                     }
+                }
+                span::before{
+                    font-size: 3em;
                 }
                 img{
                     width: 32px;

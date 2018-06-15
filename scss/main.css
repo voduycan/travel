@@ -95,11 +95,10 @@ body {
     margin: 0 auto; }
     .panel-home .section1 .container h1 {
       font-size: 48px;
-      text-align: center;
       font-size: 3em;
       color: white;
       font-weight: bolder;
-      margin-bottom: 2em; }
+      margin: 1em auto; }
     .panel-home .section1 .container .ani1 {
       animation: bounceInUp 1.5s linear forwards; }
     .panel-home .section1 .container .ani2 {
@@ -136,6 +135,8 @@ body {
       .panel-home .section2 .container-section2 .contact .contact-now:hover {
         background: #659BD1;
         color: white; }
+    .panel-home .section2 .container-section2 .contact span::before {
+      font-size: 3em; }
     .panel-home .section2 .container-section2 .contact img {
       width: 32px;
       height: auto;
@@ -398,5 +399,674 @@ body {
 
 .ani-sec6 {
   transform: translate3d(0, 0, 0) !important; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?luotsc");
+  src: url("../fonts/icomoon.eot?luotsc#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?luotsc") format("truetype"), url("../fonts/icomoon.woff?luotsc") format("woff"), url("../fonts/icomoon.svg?luotsc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-account:before {
+  content: "\e988"; }
+
+.icon-log-out:before {
+  content: "\e989"; }
+
+.icon-manage:before {
+  content: "\e98a";
+  color: #2597c8; }
+
+.icon-staff:before {
+  content: "\e98b"; }
+
+.icon-support:before {
+  content: "\e98c"; }
+
+.icon-avatar:before {
+  content: "\e900"; }
+
+.icon-complete .path1:before {
+  content: "\e901";
+  color: #659bd2; }
+
+.icon-complete .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: #f5f9fc; }
+
+.icon-agent:before {
+  content: "\e903";
+  color: #f6921e; }
+
+.icon-arrow-down:before {
+  content: "\e904";
+  color: #808184; }
+
+.icon-Asset-14:before {
+  content: "\e905";
+  color: #04263c; }
+
+.icon-building .path1:before {
+  content: "\e906";
+  color: #9edbed;
+  opacity: 0.9; }
+
+.icon-building .path2:before {
+  content: "\e907";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path3:before {
+  content: "\e908";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path4:before {
+  content: "\e909";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path5:before {
+  content: "\e90a";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path6:before {
+  content: "\e90b";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path7:before {
+  content: "\e90c";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path8:before {
+  content: "\e90d";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path9:before {
+  content: "\e90e";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path10:before {
+  content: "\e90f";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path11:before {
+  content: "\e910";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path12:before {
+  content: "\e911";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path13:before {
+  content: "\e912";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path14:before {
+  content: "\e913";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path15:before {
+  content: "\e914";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path16:before {
+  content: "\e915";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path17:before {
+  content: "\e916";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path18:before {
+  content: "\e917";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path19:before {
+  content: "\e918";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path20:before {
+  content: "\e919";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path21:before {
+  content: "\e91a";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path22:before {
+  content: "\e91b";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path23:before {
+  content: "\e91c";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-building .path24:before {
+  content: "\e91d";
+  margin-left: -1.0107421875em;
+  color: #404041; }
+
+.icon-customer-service:before {
+  content: "\e91e";
+  color: #6098d1; }
+
+.icon-date-picker:before {
+  content: "\e91f";
+  color: #a6a8ab; }
+
+.icon-fac-air-conditioning:before {
+  content: "\e920";
+  color: #8ec0e8; }
+
+.icon-fac-airport-trans:before {
+  content: "\e921";
+  color: #8ec0e8; }
+
+.icon-fac-business:before {
+  content: "\e922";
+  color: #8ec0e8; }
+
+.icon-fac-family-room:before {
+  content: "\e923";
+  color: #8ec0e8; }
+
+.icon-fac-gym:before {
+  content: "\e924";
+  color: #8ec0e8; }
+
+.icon-fac-indoor-pool:before {
+  content: "\e925";
+  color: #8ec0e8; }
+
+.icon-fac-meeting-room:before {
+  content: "\e926";
+  color: #8ec0e8; }
+
+.icon-fac-non-smoking:before {
+  content: "\e927";
+  color: #8ec0e8; }
+
+.icon-fac-outdoor-pool:before {
+  content: "\e928";
+  color: #8ec0e8; }
+
+.icon-fac-room-service:before {
+  content: "\e929";
+  color: #8ec0e8; }
+
+.icon-globe:before {
+  content: "\e92a";
+  color: #659bd2; }
+
+.icon-globe-outline:before {
+  content: "\e92b";
+  color: #2597c8; }
+
+.icon-guests-outline:before {
+  content: "\e92c"; }
+
+.icon-icon-agent-outline:before {
+  content: "\e92d"; }
+
+.icon-icon-agent-solid .path1:before {
+  content: "\e92e";
+  color: #4586bc; }
+
+.icon-icon-agent-solid .path2:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: white; }
+
+.icon-icon-user-outline:before {
+  content: "\e930"; }
+
+.icon-icon-user-solid:before {
+  content: "\e931";
+  color: #4586bc; }
+
+.icon-info-outline:before {
+  content: "\e932"; }
+
+.icon-info-outline-white:before {
+  content: "\e933"; }
+
+.icon-location:before {
+  content: "\e934";
+  color: #6098d1; }
+
+.icon-mail-outline:before {
+  content: "\e935";
+  color: #2597c8; }
+
+.icon-phone2:before {
+  content: "\e936";
+  color: #6098d1; }
+
+.icon-phone-outline:before {
+  content: "\e937"; }
+
+.icon-photo-outline:before {
+  content: "\e938";
+  color: #29abe2; }
+
+.icon-price .path1:before {
+  content: "\e939";
+  color: #8dcfb7;
+  opacity: 0.9; }
+
+.icon-price .path2:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: #404041; }
+
+.icon-price .path3:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: #404041; }
+
+.icon-price .path4:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: #404041; }
+
+.icon-rate .path1:before {
+  content: "\e93d";
+  color: #f5ac5f; }
+
+.icon-rate .path2:before {
+  content: "\e93e";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-rate .path3:before {
+  content: "\e93f";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-rate .path4:before {
+  content: "\e940";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-rate .path5:before {
+  content: "\e941";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-rate .path6:before {
+  content: "\e943";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-rate .path7:before {
+  content: "\e944";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-rate .path8:before {
+  content: "\e945";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-rate .path9:before {
+  content: "\e946";
+  margin-left: -1.15625em;
+  color: #404041; }
+
+.icon-search .path1:before {
+  content: "\e947";
+  color: #659bd2;
+  opacity: 0.9; }
+
+.icon-search .path2:before {
+  content: "\e948";
+  margin-left: -0.9306640625em;
+  color: #659bd2; }
+
+.icon-search .path3:before {
+  content: "\e949";
+  margin-left: -0.9306640625em;
+  color: none; }
+
+.icon-search .path4:before {
+  content: "\e94a";
+  margin-left: -0.9306640625em;
+  color: none; }
+
+.icon-send .path1:before {
+  content: "\e94b";
+  color: #faaf5e;
+  opacity: 0.9; }
+
+.icon-send .path2:before {
+  content: "\e94c";
+  margin-left: -1.224609375em;
+  color: #231f20; }
+
+.icon-send .path3:before {
+  content: "\e94d";
+  margin-left: -1.224609375em;
+  color: #f7f7f8; }
+
+.icon-send .path4:before {
+  content: "\e94e";
+  margin-left: -1.224609375em;
+  color: #231f20; }
+
+.icon-send .path5:before {
+  content: "\e94f";
+  margin-left: -1.224609375em;
+  color: #231f20; }
+
+.icon-send .path6:before {
+  content: "\e950";
+  margin-left: -1.224609375em;
+  color: #231f20; }
+
+.icon-send .path7:before {
+  content: "\e951";
+  margin-left: -1.224609375em;
+  color: #f7f7f8; }
+
+.icon-service .path1:before {
+  content: "\e952";
+  color: #00adee;
+  opacity: 0.7; }
+
+.icon-service .path2:before {
+  content: "\e953";
+  margin-left: -1.19140625em;
+  color: #00adee;
+  opacity: 0.7; }
+
+.icon-service .path3:before {
+  content: "\e954";
+  margin-left: -1.19140625em;
+  color: #f6921e;
+  opacity: 0.7; }
+
+.icon-service .path4:before {
+  content: "\e955";
+  margin-left: -1.19140625em;
+  color: none; }
+
+.icon-service .path5:before {
+  content: "\e956";
+  margin-left: -1.19140625em;
+  color: none; }
+
+.icon-service .path6:before {
+  content: "\e957";
+  margin-left: -1.19140625em;
+  color: none; }
+
+.icon-set .path1:before {
+  content: "\e958";
+  color: #e6e7e8;
+  opacity: 0.9; }
+
+.icon-set .path2:before {
+  content: "\e959";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path3:before {
+  content: "\e95a";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path4:before {
+  content: "\e95b";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path5:before {
+  content: "\e95c";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path6:before {
+  content: "\e95d";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path7:before {
+  content: "\e95e";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path8:before {
+  content: "\e95f";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path9:before {
+  content: "\e960";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path10:before {
+  content: "\e961";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path11:before {
+  content: "\e962";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path12:before {
+  content: "\e963";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path13:before {
+  content: "\e964";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path14:before {
+  content: "\e965";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path15:before {
+  content: "\e966";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path16:before {
+  content: "\e967";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path17:before {
+  content: "\e968";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path18:before {
+  content: "\e969";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path19:before {
+  content: "\e96a";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path20:before {
+  content: "\e96b";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path21:before {
+  content: "\e96c";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path22:before {
+  content: "\e96d";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path23:before {
+  content: "\e96e";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path24:before {
+  content: "\e96f";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path25:before {
+  content: "\e970";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path26:before {
+  content: "\e971";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path27:before {
+  content: "\e972";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path28:before {
+  content: "\e973";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path29:before {
+  content: "\e974";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path30:before {
+  content: "\e975";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path31:before {
+  content: "\e976";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path32:before {
+  content: "\e977";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path33:before {
+  content: "\e978";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path34:before {
+  content: "\e979";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path35:before {
+  content: "\e97a";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path36:before {
+  content: "\e97b";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path37:before {
+  content: "\e97c";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path38:before {
+  content: "\e97d";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path39:before {
+  content: "\e97e";
+  margin-left: -0.8291015625em;
+  color: #231f20; }
+
+.icon-set .path40:before {
+  content: "\e97f";
+  margin-left: -0.8291015625em;
+  color: #659bd2; }
+
+.icon-star:before {
+  content: "\e980";
+  color: #faaf5f; }
+
+.icon-why-commission:before {
+  content: "\e981";
+  color: #659bd2; }
+
+.icon-why-customer:before {
+  content: "\e982";
+  color: #659bd2; }
+
+.icon-why-ease .path1:before {
+  content: "\e983";
+  color: #659bd2; }
+
+.icon-why-ease .path2:before {
+  content: "\e984";
+  margin-left: -1em;
+  color: #f5f9fc; }
+
+.icon-why-free:before {
+  content: "\e985";
+  color: #659bd2; }
+
+.icon-why-search:before {
+  content: "\e986";
+  color: #659bd2; }
+
+.icon-why-voucher:before {
+  content: "\e987";
+  color: #659bd2; }
+
+.icon-phone:before {
+  content: "\e942"; }
 
 /*# sourceMappingURL=main.css.map */

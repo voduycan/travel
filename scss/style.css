@@ -72,11 +72,10 @@ body {
     margin: 0 auto; }
     .panel-home .section1 .container h1 {
       font-size: 48px;
-      text-align: center;
       font-size: 3em;
       color: white;
       font-weight: bolder;
-      margin-bottom: 2em; }
+      margin: 1em auto; }
     .panel-home .section1 .container .ani1 {
       animation: bounceInUp 1.5s linear forwards; }
     .panel-home .section1 .container .ani2 {
@@ -113,6 +112,8 @@ body {
       .panel-home .section2 .container-section2 .contact .contact-now:hover {
         background: #659BD1;
         color: white; }
+    .panel-home .section2 .container-section2 .contact span::before {
+      font-size: 3em; }
     .panel-home .section2 .container-section2 .contact img {
       width: 32px;
       height: auto;
