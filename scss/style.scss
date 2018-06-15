@@ -1,6 +1,7 @@
 @import 'variable';
+@import "button";
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .navbar{
@@ -107,13 +108,13 @@ body{
             }
             .ani1{
                 animation: bounceInUp 1.5s linear forwards;
-               }
-               .ani2{
+            }
+            .ani2{
                 animation: bounceInUp 1.5s linear 0.2s forwards;
-               }
-               .ani3{
+            }
+            .ani3{
                 animation: bounceInUp 1.5s linear 0.4s forwards;
-               }
+            }
             .sec1-ani{
                 text-align: center;
                 
@@ -133,12 +134,18 @@ body{
             }
         }
     }
+    img{
+        vertical-align: baseline !important;
+    }
     .section2{
         margin-top: 2em;
         .container-section2{
             width: 90%;
             margin: 0 auto;
             .contact{
+                @media only screen and (max-width: 767px){
+                    margin-bottom: 1em;
+                }
                 .contact-now{
                     margin-top: 1.5em;
                     text-transform: uppercase;
@@ -189,6 +196,7 @@ body{
                 text-align: center;
                 margin-bottom: 2em;
                 margin-top: 4em;
+                text-transform: uppercase;
             }
             width: 80%;
             margin: 0 auto;
@@ -210,8 +218,6 @@ body{
             margin-bottom: 4em !important;
         }
         #sec4-img{
-            transition: all 0.8s ease-in-out;
-            transform: translate3d(-101%,0,0);
             @media only screen and (max-width:767px){
                 position: relative;
                 top: 0;
@@ -229,8 +235,6 @@ body{
             line-height: 2em;
             text-align: left;
             #chart{
-                transition: all 0.8s ease-in-out;
-                transform: translate3d(0,100%,0);
                 img{
                     width: 70%;
                 }
@@ -269,6 +273,7 @@ body{
         margin-top: 5em;
         .container{
             .row{
+
                 .sec6-left{
                     text-align: left;
                     h2{
@@ -330,8 +335,6 @@ body{
                         @media only screen and (max-width:767px){
                             display: none !important;
                         }
-                        transition: all 0.8s ease-in-out;
-                        transform: translate3d(150%,0,0);
                         height: 75%;
                         width: auto;
                         
@@ -352,5 +355,130 @@ body{
         width: 100%;
         height: auto;
         margin-top: 3em;
+    }
+    .section7{
+
+        .container{
+            .row{
+                h2{
+                    margin: 1em auto;
+                }
+                p{
+                    margin-bottom: 3em;
+                }
+                .sec7-content{
+                    img{
+                        width: auto;
+                        height: 5em;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .section8{
+        margin-top: 3em;
+        .container{
+            .trustyou{
+                padding: 2em 1em;
+                img{
+                    width: 10em;
+                    position: relative;
+                    top: -2em;
+                }
+                
+            }
+        }
+    }
+    .section9{
+        margin-top: 3em;
+        
+        .container{
+            .row{
+                h2{
+                    margin: 0 auto;
+                }
+                p{
+                    margin: 1em auto;
+                }
+                .vd2{
+                    animation: bounceInUp 1.5s linear forwards;
+                    @media only screen and (max-width:576px){
+                        display: none;
+                    }
+                }
+                #vd3{
+                   
+                    @media only screen and (max-width:576px){
+                        display: none;
+                    }
+                }
+                .sec9{
+                    padding: 1em;
+                    .sec9-video{
+                        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                        margin: 2em 0;
+                        @media only screen and (max-width:576px){
+                            margin: 1em 0;
+                        }
+                        
+                        a{
+                            color: $color-black;
+                            &:hover{
+                                color: $color-blue;
+                            }
+                            text-decoration: none;
+                            .video{
+                                position: relative;
+                                .play-button{
+                                    position: absolute;
+                                    background: none;
+                                    border: none;
+                                    width: 30px;
+                                    top: 50%;
+                                    left: 50%;
+                                    margin: -16px;
+                                }
+                                width: 100%;
+                                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .video-card{
+                                padding: 1em 0.3em;
+                                h5{
+                                    height: 4em;
+                                    @media only screen and (max-width: 767px){
+                                        font-size: 1em;
+                                    }
+                                    @media only screen and (max-width: 576px){
+                                        height: 1em;
+                                        font-size: 1.25em;
+                                    }
+                                    text-transform: capitalize;
+                                    small{
+                                        text-transform: uppercase;
+                                        position: relative;
+                                        top: -0.5em;
+                                        left: -0.3em;
+                                        margin-right: 0.2em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .browse{
+                    @include button-blue;    
+                }
+            }
+        }
+    }
+    #divider3{
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
     }
 }

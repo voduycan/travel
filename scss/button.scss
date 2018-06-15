@@ -1,0 +1,16 @@
+@mixin button-blue{
+                box-sizing: border-box;
+                border: 2px solid $color-blue;
+                color: $color-blue;
+                background: $color-white;
+                height: 38px;
+                width: 185px;
+                border-radius: 20px;
+                text-transform: uppercase;
+                margin: 0 auto;
+                font-weight: bold;
+                &:hover{
+                    background: $color-blue;
+                    color: $color-white;
+                }
+}

@@ -1,13 +1,22 @@
 @import "variable";
 .ani-class{
-    transform: translate3d(0,0,0)!important;
+    animation: bounceInLeft 1.5s linear forwards;
 }
 .ani-chart-in{
-    transform: translate3d(0,0,0)!important;
+    animation: bounceInRight 1.5s linear forwards;
+}
+.ani-sec6{
+    animation: bounceInRight 1.5s linear forwards;
+}
+.sec71-ani{
+    animation: bounceInUp 1.5s linear forwards;
+}
+.sec72-ani{
+    animation: bounceInUp 1.5s linear 0.25s forwards;
+}
+.sec73-ani{
+    animation: bounceInUp 1.5s linear 0.5s forwards;
 }
 .boder-right{
     border-right: 1px solid $color-gray;
-}
-.ani-sec6{
-    transform: translate3d(0,0,0)!important;
 }
