@@ -1,70 +1,70 @@
 body {
   font-family: 'Montserrat', sans-serif !important; }
 
-.navbar {
+header .navbar {
   background: white;
   padding-top: 1.5em !important;
   padding-bottom: 1.5em !important; }
-  .navbar .navbar-brand #logo-big {
+  header .navbar .navbar-brand #logo-big {
     display: inline-block;
     width: 10em;
     height: auto; }
     @media only screen and (max-width: 991px) {
-      .navbar .navbar-brand #logo-big {
+      header .navbar .navbar-brand #logo-big {
         display: none; } }
-  .navbar .navbar-brand #logo-small {
+  header .navbar .navbar-brand #logo-small {
     display: none; }
     @media only screen and (max-width: 991px) {
-      .navbar .navbar-brand #logo-small {
+      header .navbar .navbar-brand #logo-small {
         display: inline-block; } }
-  .navbar .collapse ul {
+  header .navbar .collapse ul {
     position: absolute;
     right: 2em; }
     @media only screen and (max-width: 767px) {
-      .navbar .collapse ul {
+      header .navbar .collapse ul {
         position: relative;
         right: 0; } }
-    .navbar .collapse ul .hide-item {
+    header .navbar .collapse ul .hide-item {
       display: inline-block; }
       @media only screen and (max-width: 1202px) and (min-width: 768px) {
-        .navbar .collapse ul .hide-item {
+        header .navbar .collapse ul .hide-item {
           display: none !important; } }
-    .navbar .collapse ul .hide-dropdown {
+    header .navbar .collapse ul .hide-dropdown {
       display: none; }
       @media only screen and (max-width: 1202px) and (min-width: 768px) {
-        .navbar .collapse ul .hide-dropdown {
+        header .navbar .collapse ul .hide-dropdown {
           display: inline-block !important; } }
-    .navbar .collapse ul .nav-item {
+    header .navbar .collapse ul .nav-item {
       padding-right: 1em span;
         padding-right-color: #659BD1; }
-      .navbar .collapse ul .nav-item .nav-link {
+      header .navbar .collapse ul .nav-item .nav-link {
         color: rgba(0, 0, 0, 0.5); }
-        .navbar .collapse ul .nav-item .nav-link:hover {
+        header .navbar .collapse ul .nav-item .nav-link:hover {
           color: black; }
-        .navbar .collapse ul .nav-item .nav-link .text-black {
+        header .navbar .collapse ul .nav-item .nav-link .text-black {
           color: black;
           text-transform: capitalize;
           font-weight: 500; }
-      .navbar .collapse ul .nav-item .dropdown-menu {
+      header .navbar .collapse ul .nav-item .dropdown-menu {
         position: absolute;
         left: -5em; }
         @media only screen and (max-width: 767px) {
-          .navbar .collapse ul .nav-item .dropdown-menu {
+          header .navbar .collapse ul .nav-item .dropdown-menu {
             position: relative;
             left: 0; } }
         @media only screen and (min-width: 768px) {
-          .navbar .collapse ul .nav-item .dropdown-menu {
+          header .navbar .collapse ul .nav-item .dropdown-menu {
             animation: bounceIn 0.5s linear forwards; } }
-        .navbar .collapse ul .nav-item .dropdown-menu a {
+        header .navbar .collapse ul .nav-item .dropdown-menu a {
           border-bottom: 1px solid rgba(0, 0, 0, 0.15);
           padding-top: 0.5em;
           padding-bottom: 0.5em; }
-          .navbar .collapse ul .nav-item .dropdown-menu a:last-of-type {
+          header .navbar .collapse ul .nav-item .dropdown-menu a:last-of-type {
             border-bottom: none; }
-          .navbar .collapse ul .nav-item .dropdown-menu a .icon {
+          header .navbar .collapse ul .nav-item .dropdown-menu a .icon {
             display: inline-block;
             margin-right: 1em; }
-            .navbar .collapse ul .nav-item .dropdown-menu a .icon img {
+            header .navbar .collapse ul .nav-item .dropdown-menu a .icon img {
               width: auto;
               height: 24px; }
 
@@ -454,5 +454,95 @@ footer {
     footer .my-container .row .contact .row .social a img {
       width: 2em;
       height: auto; }
+
+#bay-hotel {
+  margin: 2em 0 5em 0; }
+  #bay-hotel h3 {
+    font-weight: 600; }
+  #bay-hotel .star .gold {
+    color: #F5AC5F; }
+  #bay-hotel .star .white {
+    color: #ccc; }
+
+#booking {
+  padding: 2em 0;
+  background: #F5F9FC; }
+  #booking p {
+    font-size: 1.2em; }
+  #booking strong {
+    font-size: 1.4em; }
+
+#chitiet {
+  margin: 2em 0; }
+  #chitiet h3.text-blue {
+    text-transform: uppercase; }
+  #chitiet h4 {
+    color: gray;
+    font-size: 1.75rem; }
+  #chitiet .chitiet-left {
+    margin-top: 1em; }
+    #chitiet .chitiet-left .guest .form-row {
+      margin-top: 3em; }
+      @media only screen and (max-width: 575px) {
+        #chitiet .chitiet-left .guest .form-row {
+          margin-top: 1em; } }
+      #chitiet .chitiet-left .guest .form-row input, #chitiet .chitiet-left .guest .form-row select {
+        border: none;
+        border-bottom: 1px solid #eee; }
+  #chitiet .chitiet-right {
+    margin-top: 1em; }
+    #chitiet .chitiet-right .payment .payment-form {
+      margin-bottom: 1.5em; }
+      #chitiet .chitiet-right .payment .payment-form input {
+        height: 3em;
+        background: #E6EEF8; }
+
+#summary {
+  margin: 2em 0 5em 0; }
+  #summary table {
+    margin-bottom: 2em; }
+    #summary table tr td {
+      padding-left: 2em; }
+      #summary table tr td h5 {
+        font-weight: 600; }
+    #summary table tr th h5 {
+      font-weight: 600; }
+  #summary button {
+    position: relative;
+    top: 0.4em;
+    float: left;
+    border: none;
+    padding: 0.5em;
+    background: #F5AC5F; }
+    #summary button:hover {
+      background: black; }
+    #summary button span {
+      font-size: 1.5em;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-right: 0.5em;
+      color: white; }
+      @media only screen and (max-width: 575px) {
+        #summary button span {
+          font-size: 1.2em; } }
+    #summary button i {
+      color: white; }
+  #summary .total {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 600; }
+    @media only screen and (max-width: 414px) {
+      #summary .total {
+        float: left;
+        margin-top: 1em;
+        text-align: left; } }
+    #summary .total .total-item span {
+      margin-left: 0.5em; }
+    #summary .total .total-item .top {
+      color: #659BD1; }
+    #summary .total .total-item .bottom {
+      color: #F5AC5F; }
+  #summary .clear {
+    clear: left; }
 
 /*# sourceMappingURL=style.css.map */

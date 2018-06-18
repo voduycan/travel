@@ -19,4 +19,14 @@
 .boder-right {
   border-right: 1px solid gray; }
 
+.text-blue {
+  color: #659BD1 !important; }
+
+.pd-top {
+  padding-top: 0.4em !important; }
+
+@media only screen and (max-width: 575px) {
+  .mr-top-1em-media {
+    margin-top: 1em; } }
+
 /*# sourceMappingURL=class.css.map */

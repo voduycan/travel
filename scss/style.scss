@@ -4,85 +4,87 @@ body{
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.navbar{
-    background: white;
-    padding-top: 1.5em !important;
-    padding-bottom: 1.5em !important;
-    .navbar-brand{
-        #logo-big{
-            display: inline-block;
-            width: 10em;
-            height: auto;
-            @media only screen and (max-width: 991px){
+header{
+    .navbar{
+        background: white;
+        padding-top: 1.5em !important;
+        padding-bottom: 1.5em !important;
+        .navbar-brand{
+            #logo-big{
+                display: inline-block;
+                width: 10em;
+                height: auto;
+                @media only screen and (max-width: 991px){
+                    display: none;
+                }
+            }
+            #logo-small{
                 display: none;
+                @media only screen and (max-width: 991px){
+                    display: inline-block;
+                }
             }
         }
-        #logo-small{
-            display: none;
-            @media only screen and (max-width: 991px){
-                display: inline-block;
-            }
-        }
-    }
-    .collapse{
-        ul{
-            position: absolute;
-            right: 2em;
-            @media only screen and (max-width: 767px){
-                position: relative;
-                right: 0;
-            }
-            .hide-item{
-                display: inline-block;
-                @media only screen and (max-width:1202px) and (min-width: 768px){
-                    display: none !important;
+        .collapse{
+            ul{
+                position: absolute;
+                right: 2em;
+                @media only screen and (max-width: 767px){
+                    position: relative;
+                    right: 0;
                 }
-            }
-            .hide-dropdown{
-                display: none;
-                @media only screen and (max-width: 1202px) and (min-width: 768px){
-                    display: inline-block !important;
-                }
-            }
-            .nav-item{
-                padding-right: 1em
-                span{
-                    color: $color-blue;
-                }
-                .nav-link{
-                    color:  rgba(0, 0, 0, 0.5);
-                    &:hover{
-                    color: $color-black;
+                .hide-item{
+                    display: inline-block;
+                    @media only screen and (max-width:1202px) and (min-width: 768px){
+                        display: none !important;
                     }
-                    .text-black{
+                }
+                .hide-dropdown{
+                    display: none;
+                    @media only screen and (max-width: 1202px) and (min-width: 768px){
+                        display: inline-block !important;
+                    }
+                }
+                .nav-item{
+                    padding-right: 1em
+                    span{
+                        color: $color-blue;
+                    }
+                    .nav-link{
+                        color:  rgba(0, 0, 0, 0.5);
+                        &:hover{
                         color: $color-black;
-                        text-transform: capitalize;
-                        font-weight: 500;
-                    }                
-                }
-                .dropdown-menu{
-                    position: absolute;
-                    left: -5em;
-                    @media only screen and (max-width:767px){
-                        position: relative;
-                        left: 0;
-                    }
-                    @media only screen and (min-width:768px){
-                        animation: bounceIn 0.5s linear forwards;
-                    }
-                    a{
-                        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-                        padding-top: 0.5em;
-                        padding-bottom: 0.5em;
-                        &:last-of-type{
-                            border-bottom: none;
                         }
-                        .icon{
-                            display: inline-block;
-                            margin-right: 1em;
-                            img{
-                                width: auto;
-                                height: 24px;
+                        .text-black{
+                            color: $color-black;
+                            text-transform: capitalize;
+                            font-weight: 500;
+                        }                
+                    }
+                    .dropdown-menu{
+                        position: absolute;
+                        left: -5em;
+                        @media only screen and (max-width:767px){
+                            position: relative;
+                            left: 0;
+                        }
+                        @media only screen and (min-width:768px){
+                            animation: bounceIn 0.5s linear forwards;
+                        }
+                        a{
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                            padding-top: 0.5em;
+                            padding-bottom: 0.5em;
+                            &:last-of-type{
+                                border-bottom: none;
+                            }
+                            .icon{
+                                display: inline-block;
+                                margin-right: 1em;
+                                img{
+                                    width: auto;
+                                    height: 24px;
+                                }
                             }
                         }
                     }
@@ -572,5 +574,133 @@ footer{
                 }
             }
         }
+    }
+}
+
+//confirm
+#bay-hotel{
+    margin: 2em 0 5em 0;
+    h3{
+        font-weight: 600;
+    }
+    .star{
+        .gold{
+            color: $color-star-gold;
+        }
+        .white{
+            color: $color-star-none;
+        }
+    }
+}
+#booking{
+    padding: 2em 0;
+    background: $color-light;
+    p{font-size: 1.2em}
+    strong{font-size: 1.4em}
+}
+#chitiet{
+    margin: 2em 0;
+    h3.text-blue{
+        text-transform: uppercase;
+    }
+    h4{
+        color: $color-gray;
+        font-size: 1.75rem;
+    }
+    .chitiet-left{
+        margin-top: 1em;
+        .guest{
+            .form-row{
+                margin-top: 3em;
+                @media only screen and (max-width: 575px){
+                    margin-top: 1em;
+                }
+                input,select{
+                    border: none;
+                    border-bottom: 1px solid $color-eee; 
+                }
+            }
+        }
+    }
+    .chitiet-right{
+        margin-top: 1em;
+        .payment{
+            .payment-form{
+                margin-bottom: 1.5em;
+                input{
+                    height: 3em;
+                    background: $color-footer;
+                }
+            }
+        }
+    }
+}
+
+//summary
+#summary{
+    margin: 2em 0 5em 0;
+    table{
+        margin-bottom: 2em;
+        tr{
+            td{
+                padding-left: 2em;
+                h5{
+                    font-weight: 600;
+                }
+            }
+            th{
+                h5{
+                    font-weight: 600;  
+                }
+            }
+        }
+    }
+    button{
+        position: relative;
+        top: 0.4em;
+        float: left;
+        border: none;
+        padding: 0.5em;
+        background: $color-brown;
+        &:hover{
+            background: $color-black;
+        }
+        span{
+            @media only screen and (max-width: 575px) {
+                font-size: 1.2em;
+            }
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-right: 0.5em;
+            color: $color-white;
+        }
+        i{
+            color: $color-white;
+        }
+    }
+    .total{
+        @media only screen and (max-width: 414px){
+            float: left;
+            margin-top: 1em;
+            text-align: left;
+        }
+        text-align: right;
+        font-size: 1.2em;
+        font-weight: 600;
+        .total-item{
+            span{
+                margin-left: 0.5em;
+            }
+            .top{
+                color: $color-blue;
+            }
+            .bottom{
+                color: $color-brown;
+            }
+        }
+    }
+    .clear{
+        clear: left;
     }
 }

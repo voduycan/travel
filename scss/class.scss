@@ -20,4 +20,14 @@
 .boder-right{
     border-right: 1px solid $color-gray;
 }
-
+.text-blue{
+    color: #659BD1 !important;
+}
+.pd-top{
+    padding-top: 0.4em !important;
+}
+.mr-top-1em-media{
+    @media only screen and (max-width: 575px) {
+        margin-top: 1em;
+    }
+}

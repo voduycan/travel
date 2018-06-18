@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scss/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+  <body>
+      
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="#">
+                 <img id="logo-big" src="./assets/logo.svg" alt="logo">
+                 <img id="logo-small" src="./assets/logo-icon.svg" alt="logo">
+     
+             </a>
+             <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                 aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="collapsibleNavId">
+                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                     <li class="nav-item active">
+                         <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">ABOUT</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">HOW TO</a>
+                     </li>
+                     <li class="nav-item hide-item">
+                         <a class="nav-link" href="#">FAQs</a>
+                     </li>
+                     <li class="nav-item hide-item">
+                         <a class="nav-link" href="#">CONTACT US</a>
+                     </li>
+                     <li class="nav-item dropdown hide-dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MORE</a>
+                         <div class="dropdown-menu" aria-labelledby="dropdownId">
+                             <a class="dropdown-item" href="#">FAQs</a>
+                             <a class="dropdown-item" href="#">CONTACT US</a>
+                         </div>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#"><img src="./assets/icons/phone-outline.svg" alt="" width="15px"></span>1300 49 30 50</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <span class="text-black">lee taylor</span>
+                         <img src="./assets/avatar.svg" alt="" width="32" height="32">
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="dropdownId">
+                         <a class="dropdown-item" href="#">
+                             <div class="icon">
+                                 <img src="./assets/user-dropdown/manage.svg" alt="">
+                             </div>
+                             Manage Bookings
+                         </a>
+                         <a class="dropdown-item" href="#">
+                             <div class="icon">
+                                 <img src="./assets/user-dropdown/account.svg" alt="">
+                             </div>
+                             Account
+                         </a>
+                         <a class="dropdown-item" href="#">
+                             <div class="icon">
+                                 <img src="./assets/user-dropdown/support.svg" alt="">
+                             </div>
+                             Costomer Support
+                         </a>
+                         <a class="dropdown-item" href="#">
+                             <div class="icon">
+                                 <img src="./assets/user-dropdown/staff.svg" alt="">
+                             </div>
+                             Travelwards staff
+                         </a>
+                         <a class="dropdown-item" href="#">
+                             <div class="icon">
+                                 <img src="./assets/user-dropdown/log-out.svg" alt="">
+                             </div>
+                             Log Out
+                         </a>
+                     </div>
+                 </li>
+             </div>
+            </div>
+         </nav>
+    </header>
+
+    <section id="bay-hotel" class="text-center" >
+        <h3>Bay Singapore Hotel</h3>
+        <div class="star">
+            <i class="fas fa-star gold"></i>
+            <i class="fas fa-star gold"></i>
+            <i class="fas fa-star gold"></i>
+            <i class="fas fa-star gold"></i>
+            <i class="far fa-star white"></i>
+        </div>
+    </section>
+    <section id="booking">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 text-center">
+                    <p>Booking Date</p>
+                    <strong>19 Mar to 20 Mar, 2018</strong>
+                </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <p>Booking For</p>
+                    <strong>1 Night, 1 Room</strong>
+                </div>
+                <div class="col-12 col-sm-4 text-center">
+                    <p>Number of People</p>
+                    <strong>2 Adults</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chitiet">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3><strong>Room 1 Standard Room Single Bed</strong></h3>
+                    <h4>2 Adults</h4>
+                </div>
+                <div class="col-12 col-sm-8 chitiet-left">
+                    <h3 class="text-blue">guest</h3>
+                    <form class="guest">
+                        <div class="form-row">
+                            <div class="col-sm-6 col-12">
+                                <input type="text" class="form-control mr-2" placeholder="Existing Client Search">
+                            </div>
+                            <div class="col-sm-6  col-12 mr-top-1em-media">
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Prefix</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6 col-12">
+                                <input type="text" class="form-control mr-2" placeholder="First name">
+                            </div>
+                            <div class="col-sm-6 col-12 mr-top-1em-media">
+                                <input type="text" class="form-control mr-2" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6 col-12">
+                                <input type="text" class="form-control mr-2" placeholder="Email">
+                            </div>
+                            <div class="col-sm-6 col-12 mr-top-1em-media">
+                                <input type="text" class="form-control mr-2" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6 col-12">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>Country</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 col-12 mr-top-1em-media">
+                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option selected>City</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-12 col-sm-4 chitiet-right">
+                    <h3 class="text-blue">payment</h3>
+                    <form class="payment">
+                        <div class="form-group payment-form">
+                            <label for="exampleInputEmail1">Card Number<span class="text-blue">*</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-row payment-form">
+                            <div class="col-sm-12">
+                                <label for="exampleInputEmail1">Expiry (MM/YY)<span class="text-blue">*</span></label>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control mr-2">
+                            </div>
+                            <div class="col-sm-2 text-center pd-top">
+                                <span>/</span>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control mr-2">
+                            </div>
+                        </div>
+                        <div class="form-group payment-form">
+                            <label for="exampleInputEmail1">CVV<span class="text-blue">*</span></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group payment-form">
+                            <p class="text-blue">Powered by <strong>stripe</strong></p>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="summary">
+        <div class="container">
+            <h3><strong>Summary</strong></h3>
+            <h5>Room 1</h5>
+            <h5>2 Adults</h5>
+            <h5><strong>Standard Room Single Beds</strong></h5>
+            <h5>Beds: 2 Single </h5>
+            <h5>Room Only</h5>
+            <br/>
+            <table>
+                <tr>
+                    <th><h5>Subtotal:</h5></th>
+                    <td><h5>$186.30 AUD</h5></td>
+                </tr>
+                <tr>
+                    <th><h5>Taxes & Fees:</h5></th>
+                    <td><h5>$8.67 AUD</h5></td>
+                </tr>
+            </table>
+            <button>
+                <span>change price</span>
+                <i class="fas fa-angle-right"></i>
+            </button>
+            <div class="total">
+                <div class="total-item">Total Amount:<span class="top">$194.97 AUD</span></div>
+                <div class="total-item">Total Profit:<span class="bottom">$59.87 AUD</span></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <section id="disclaimer">
+        <div class="container">
+            <h3>Disclaimer</h3>
+            <p><strong>GST Disclaimer</strong></p>
+            <p>Travelwards is to be used by a travel agency, for an end customers travel (or part of a travel booking) which is outside of the customer and agency's home country. Where GST is applicable for the end customer, the travel agency takes full responsibility and liability, to charge the necessary GST amounts</p>
+            <p><strong>Payments Disclaimer</strong></p>
+            <p>The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport ...</p>
+            <p>The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport. The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport. The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport.</p>
+            <a>more</a>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="my-container">
+            <div class="row">
+                <div class="col-md-2 footer-item logo">
+                    <img src="./assets/logo.svg" alt="">
+                </div>
+                <div class="col-md-3 footer-item address">
+                    <ul>
+                        <li>sales@travelwards.com</li>
+                        <li>support@travelwards.com</li>
+                        <li>1300 49 30 50</li>
+                        <li>+61 3 8899 7599 (AUS)</li>
+                        <li>+1 (201) 365 9900 (USA)</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 footer-item menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">How to</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 footer-item policy">
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-item contact">
+                    <div class="row">
+                        <div class="col-md-7 contact-left">
+                            <span>Sydney, NSW</span>
+                            <span>Australia</span>
+                        </div>
+                        <div class="col-md-5 contact-right">
+                            <img src="./assets/icons/location.svg" alt="">
+                        </div>
+                        <div class="col-md-12 col-12 social">
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-instagram.png" alt=""></a>
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-twitter.png" alt=""></a>
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-linkedin.png" alt=""></a>
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-facebook.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="js/scroll.js"></script>
+</body>
+</html>
