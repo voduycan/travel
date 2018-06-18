@@ -52,6 +52,9 @@ body {
           .navbar .collapse ul .nav-item .dropdown-menu {
             position: relative;
             left: 0; } }
+        @media only screen and (min-width: 768px) {
+          .navbar .collapse ul .nav-item .dropdown-menu {
+            animation: bounceIn 0.5s linear forwards; } }
         .navbar .collapse ul .nav-item .dropdown-menu a {
           border-bottom: 1px solid rgba(0, 0, 0, 0.15);
           padding-top: 0.5em;
@@ -284,11 +287,9 @@ body {
     margin: 0 auto; }
   .panel-home .section9 .container .row p {
     margin: 1em auto; }
-  .panel-home .section9 .container .row .vd2 {
-    animation: bounceInUp 1.5s linear forwards; }
-    @media only screen and (max-width: 576px) {
-      .panel-home .section9 .container .row .vd2 {
-        display: none; } }
+  @media only screen and (max-width: 576px) {
+    .panel-home .section9 .container .row .vd2 {
+      display: none; } }
   @media only screen and (max-width: 576px) {
     .panel-home .section9 .container .row .vd3 {
       display: none; } }

@@ -1,5 +1,4 @@
 @import "variable";
-@import "button";
 @import "mixin";
 body{
     font-family: 'Montserrat', sans-serif !important;
@@ -50,7 +49,6 @@ body{
                 span{
                     color: $color-blue;
                 }
-
                 .nav-link{
                     color:  rgba(0, 0, 0, 0.5);
                     &:hover{
@@ -62,7 +60,6 @@ body{
                         font-weight: 500;
                     }                
                 }
-
                 .dropdown-menu{
                     position: absolute;
                     left: -5em;
@@ -70,7 +67,9 @@ body{
                         position: relative;
                         left: 0;
                     }
-
+                    @media only screen and (min-width:768px){
+                        animation: bounceIn 0.5s linear forwards;
+                    }
                     a{
                         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
                         padding-top: 0.5em;
@@ -255,7 +254,6 @@ body{
         margin-top: 5em;
         .container{
             .row{
-
                 .sec6-left{
                     text-align: left;
                     h2{
@@ -275,8 +273,6 @@ body{
                         width: 13em;
                         border-radius: 2em;
                         font-size: 12px;
-                        
-                        
                     }
                     .find{
                         @media only screen and (max-width: 767px){
@@ -342,7 +338,6 @@ body{
         margin-top: 3em;
     }
     .section7{
-
         .container{
             .row{
                 h2{
@@ -382,7 +377,6 @@ body{
     }
     .section9{
         margin-top: 3em;
-        
         .container{
             .row{
                 h2{
@@ -392,13 +386,11 @@ body{
                     margin: 1em auto;
                 }
                 .vd2{
-                    animation: bounceInUp 1.5s linear forwards;
                     @media only screen and (max-width: 576px){
                         display: none;
                     }
                 }
                 .vd3{
-                   
                     @media only screen and (max-width: 576px){
                         display: none;
                     }
