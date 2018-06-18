@@ -1,5 +1,6 @@
-@import 'variable';
+@import "variable";
 @import "button";
+@import "mixin";
 body{
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -34,13 +35,13 @@ body{
             }
             .hide-item{
                 display: inline-block;
-                @media only screen and (max-width:1202px){
+                @media only screen and (max-width:1202px) and (min-width: 768px){
                     display: none !important;
                 }
             }
             .hide-dropdown{
                 display: none;
-                @media only screen and (max-width: 1202px){
+                @media only screen and (max-width: 1202px) and (min-width: 768px){
                     display: inline-block !important;
                 }
             }
@@ -98,9 +99,9 @@ body{
         padding-bottom: 2em;
         .container{
             margin: 0 auto;
+            text-align: center;
             h1{
                 font-size: 48px;
-                
                 font-size: 3em;
                 color: white;
                 font-weight: bolder;
@@ -189,26 +190,7 @@ body{
         }
     }
     .section3{
-        .container{
-            h4{
-                color: #ccc;
-                font-size: 18px;
-                text-align: center;
-                margin-bottom: 2em;
-                margin-top: 4em;
-                text-transform: uppercase;
-            }
-            width: 80%;
-            margin: 0 auto;
-            .row{
-                img{
-                    
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 1em;
-                }
-            }
-        }
+        @include sec-list;
     }
     .section4{
         position: relative;
@@ -303,6 +285,9 @@ body{
                             left: 50%;
                             margin-left: -7em;
                         }
+                        @media only screen and (max-width: 375px){
+                            top: 57em;
+                        }
                         color: $color-white;
                         background: $color-brown;
                         border: none;
@@ -381,6 +366,11 @@ body{
         .container{
             .trustyou{
                 padding: 2em 1em;
+                p{
+                    @media only screen and (max-width: 768px) {
+                        text-align: justify;
+                    }
+                }
                 img{
                     width: 10em;
                     position: relative;
@@ -403,13 +393,13 @@ body{
                 }
                 .vd2{
                     animation: bounceInUp 1.5s linear forwards;
-                    @media only screen and (max-width:576px){
+                    @media only screen and (max-width: 576px){
                         display: none;
                     }
                 }
-                #vd3{
+                .vd3{
                    
-                    @media only screen and (max-width:576px){
+                    @media only screen and (max-width: 576px){
                         display: none;
                     }
                 }
@@ -448,6 +438,9 @@ body{
                             }
                             .video-card{
                                 padding: 1em 0.3em;
+                                @media only screen and (max-width: 375px){
+                                    padding-bottom: 2em;
+                                }
                                 h5{
                                     height: 4em;
                                     @media only screen and (max-width: 767px){
@@ -480,5 +473,112 @@ body{
         width: 100%;
         height: auto;
         margin: 1em 0;
+    }
+    .section10{
+        @include sec-list;
+        .container{
+            h4{
+                font-size: 2em;
+                margin-top: 0;
+                color: black;
+                font-weight: 700;
+                text-transform: capitalize;
+
+            }
+        }
+    }
+    .section11{
+        width: 100%;
+        height: 4em;
+        background: $color-light;
+        margin-top: 2em;
+        @media only screen and (max-width: 991px) {
+            height: 8em;
+        } 
+        @media only screen and (max-width: 375px) {
+            height: 10em;
+        }
+        .container{
+            text-align: center;
+            padding-top: 1em;
+            span{
+                font-size: 1.4em;
+                margin-right: 1em;
+                color: $color-black;
+                @media only screen and (max-width: 991px) {
+                    margin-right: 0;
+                    display: block;
+                }       
+            }
+            a{
+                @include button-blue;
+                @media only screen and (max-width: 991px) {
+                margin-top: 1em;
+                } 
+            }
+        }
+    }
+}
+footer{
+    background: $color-footer;
+    .my-container{
+        padding: 1em;
+        .row{
+            .footer-item{
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    color: $color-black;
+                    li{
+                        line-height: 2em;
+                        a{
+                            color: $color-black;
+                            text-decoration: none;
+                            &:hover{
+                                color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+            .logo{
+                @media only screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+            .address{
+                @media only screen and (max-width: 767px) {
+                    display: none;
+                }
+            }
+            .contact{
+                .row{
+                    .contact-left{
+                        @media only screen and (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+                    .contact-right{
+                        @media only screen and (max-width: 767px) {
+                            display: none;
+                        }
+                        img{
+                            position: relative;
+                            left: 0;
+                            top: 0;
+                            width: 2em;
+                        }
+                    }
+                    .social{
+                        a{
+                            img{
+                                width: 2em;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

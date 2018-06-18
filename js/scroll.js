@@ -5,7 +5,7 @@ var img_top = $('#sec4-img').offset().top -400;
 var chart_top = $('#chart').offset().top - 550;
 
 //chart sec6
-var sec6_right = $('#sec6-img').offset().top -500;
+var sec6_right = $('#sec6-img').offset().top -400;
 
 // sec7
 var sec7 = $('#sec71').offset().top -600;
