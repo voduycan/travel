@@ -704,3 +704,60 @@ footer{
         clear: left;
     }
 }
+
+//disclaimer
+#disclaimer{
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid  $color-border;
+    padding: 5em 0;
+    margin-bottom: 2em;
+    .container{
+        #more,#less{
+            button{
+                background: none;
+                border: none;
+                color: blue;
+                &:focus{
+                   outline: none;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        #less{
+            display: none;
+        }
+    }
+}
+#cancellation{
+    .container{
+        .row{
+            .cancellation-left{
+                p{
+                    margin-bottom: 0.2em;
+                }
+            }
+            .cancellation-right{
+                text-align: center;
+                button{
+                    font-size: 1.3em;
+                    text-transform: uppercase;
+                    width: 9em;
+                    height: 2.5em;
+                    font-weight: 600;
+                    color: $color-white;
+                    background: $color-blue;
+                    border: none;
+                    margin: 1.5em 0;
+                    &:hover{
+                        background: $color-blue-hover;
+                    }
+                }
+            }
+        }
+        .form-check{
+            margin: 4em 0 3em 0;
+        }
+    }
+}

@@ -29,4 +29,10 @@
   .mr-top-1em-media {
     margin-top: 1em; } }
 
+.btn-show {
+  display: block !important; }
+
+.btn-hide {
+  display: none !important; }
+
 /*# sourceMappingURL=class.css.map */

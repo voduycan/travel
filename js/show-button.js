@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('#btn-more').click(function(){
+        $('#less').removeClass('btn-hide');
+        $('#less').addClass('btn-show');
+        $('#more').addClass('btn-hide')
+    });
+    $('#btn-less').click(function(){
+        $('#more').removeClass('btn-hide');
+        $('#more').addClass('btn-show');
+        $('#less').addClass('btn-hide')
+    });
+});

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-  <body>
+<body>
       
     <header>
         <nav class="navbar navbar-expand-md navbar-light">
@@ -251,13 +251,39 @@
             <p><strong>GST Disclaimer</strong></p>
             <p>Travelwards is to be used by a travel agency, for an end customers travel (or part of a travel booking) which is outside of the customer and agency's home country. Where GST is applicable for the end customer, the travel agency takes full responsibility and liability, to charge the necessary GST amounts</p>
             <p><strong>Payments Disclaimer</strong></p>
-            <p>The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport ...</p>
-            <p>The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport. The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport. The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport.</p>
-            <a>more</a>
+            <p id="more">
+                The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport ...
+                <button id="btn-more">more</button>
+            </p>
+            <p id="less">
+                The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport. The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport. The agency or business using Travelwards, takes full responsibility and liability for all credit card transactions. As such, they must collect identification including a full name, address, telephone number and drivers license or passport.
+                <button id="btn-less">less</button>
+            </p>
         </div>
     </section>
-
-
+    <section id="cancellation">
+       <div class="container">
+            <div class="row">
+                <div class="cancellation-left col-12 col-sm-9">
+                    <h3>Cancellation policy</h3>
+                    <p class="text-blue">please review cancellation policy carefully</p>
+                    <p>Your booking is fully refundable until Mar 16, 2018, 00:00 (UTC) </p>
+                    <p>From Mar 16, 2018, 00:00 (UTC) the booking is Non-Refundable</p>
+                </div>
+                
+                <div class="cancellation-right col-12 col-sm-3">
+                    <button>book room</button>
+                </div>
+            </div>
+            <div class="form-check col-12 col-sm-12">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    I agree with the full <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
+                </label>
+            </div>
+       </div>
+       
+    </section>
 
     <footer>
         <div class="my-container">
@@ -321,5 +347,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
     <script src="js/scroll.js"></script>
+    <script src="js/show-button.js"></script>
 </body>
 </html>

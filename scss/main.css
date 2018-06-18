@@ -568,6 +568,41 @@ footer {
   #summary .clear {
     clear: left; }
 
+#disclaimer {
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding: 5em 0;
+  margin-bottom: 2em; }
+  #disclaimer .container #more button, #disclaimer .container #less button {
+    background: none;
+    border: none;
+    color: blue; }
+    #disclaimer .container #more button:focus, #disclaimer .container #less button:focus {
+      outline: none; }
+    #disclaimer .container #more button:hover, #disclaimer .container #less button:hover {
+      text-decoration: underline; }
+  #disclaimer .container #less {
+    display: none; }
+
+#cancellation .container .row .cancellation-left p {
+  margin-bottom: 0.2em; }
+#cancellation .container .row .cancellation-right {
+  text-align: center; }
+  #cancellation .container .row .cancellation-right button {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    width: 9em;
+    height: 2.5em;
+    font-weight: 600;
+    color: white;
+    background: #659BD1;
+    border: none;
+    margin: 1.5em 0; }
+    #cancellation .container .row .cancellation-right button:hover {
+      background: #4888c8; }
+#cancellation .container .form-check {
+  margin: 4em 0 3em 0; }
+
 @-webkit-keyframes bounceInUp {
   from,
     60%,
@@ -826,6 +861,12 @@ footer {
 @media only screen and (max-width: 575px) {
   .mr-top-1em-media {
     margin-top: 1em; } }
+
+.btn-show {
+  display: block !important; }
+
+.btn-hide {
+  display: none !important; }
 
 @font-face {
   font-family: 'icomoon';
