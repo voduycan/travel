@@ -2,6 +2,7 @@
 @import "mixin";
 body{
     font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px;
 }
 
 header{
@@ -51,7 +52,7 @@ header{
                         color: $color-blue;
                     }
                     .nav-link{
-                        color:  rgba(0, 0, 0, 0.5);
+                        color:  $color-black-05;
                         &:hover{
                         color: $color-black;
                         }
@@ -72,7 +73,7 @@ header{
                             animation: bounceIn 0.5s linear forwards;
                         }
                         a{
-                            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                            border-bottom: 1px solid $color-black-015;
                             padding-top: 0.5em;
                             padding-bottom: 0.5em;
                             &:last-of-type{
@@ -91,6 +92,29 @@ header{
                 }
             }
         }
+    }
+    #form-sign-in{
+        animation: bounceIn 0.8s linear forwards;
+        position: absolute;
+        width: 18em;
+        border: 1px solid $color-black-015;
+        padding: 1.5em;
+        text-align: left;
+        background: white;
+        z-index: $z-index2;
+        right: 2em;
+        top: 5em;
+        border-radius: 4px;
+        display: none;
+        button{
+            @include btn-sign-in;
+            text-transform: capitalize !important;
+            margin-right: 2em;
+        }
+    }
+    //sign in button
+    #sign-in{
+        @include btn-sign-in;
     }
 }
 
@@ -656,28 +680,11 @@ footer{
         }
     }
     button{
+        padding: 0.5em;
         position: relative;
         top: 0.4em;
         float: left;
-        border: none;
-        padding: 0.5em;
-        background: $color-brown;
-        &:hover{
-            background: $color-black;
-        }
-        span{
-            @media only screen and (max-width: 575px) {
-                font-size: 1.2em;
-            }
-            font-size: 1.5em;
-            font-weight: 600;
-            text-transform: capitalize;
-            margin-right: 0.5em;
-            color: $color-white;
-        }
-        i{
-            color: $color-white;
-        }
+        @include change-price;
     }
     .total{
         @media only screen and (max-width: 414px){
@@ -759,5 +766,225 @@ footer{
         .form-check{
             margin: 4em 0 3em 0;
         }
+    }
+}
+
+//hotel.html
+#hotel{
+    #panel{
+        height: 9em;
+        background: $color-light;
+        padding-top: 4em; 
+        .container{
+            .row{
+                a,i{
+                    color: $color-blue;
+                } 
+                .price-per{
+                    padding-top: 1em;
+                    background: white;
+                    width: 100%;
+                    text-align: center;
+                    h4{
+                        color: $color-black-05;
+                        text-transform: uppercase;
+                        font-size: 1.2em;
+                    }
+                    p{
+                        color: $color-blue;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                        strong{
+                            margin-left: 0.2em;
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#bay-ht-sin{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    .container{
+        .row{
+            .bay-ht-left{
+                button{
+
+                    @include btn-hotel;
+                    background: $color-blue;
+                    &:hover{
+                        background: $color-blue-hover;
+                    }
+                }
+                ul{
+                    list-style-type: none;
+                    padding-left: 0;
+                    li{
+                        img{
+                            width: 1em;
+                            height: auto;
+                            margin-right: 0.2em;
+                        }
+                        span{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .bay-ht-between{
+                text-align: left;
+                span{
+                    font-size: 2.2em;
+                    margin-right: 0.5em;
+                }
+                img{
+                    width: 1.5em;
+                    margin: 0 0.2em 0.8em 0;
+                }
+            }
+            .bay-ht-right{
+                button.change{
+                    @include change-price;
+                    width: 100%;
+                    height: 2.5em;
+                    text-transform: uppercase;
+                    span{
+                        font-size: 1.1em;
+                   }
+                }
+               
+            }
+            .hotel-location{
+               margin-top: 1em;
+                img{
+                    width: 1.5em;
+                    margin-left: 0.5em;
+                    margin-top: 0.3em;
+                }
+                h6{
+                    color: $color-bac;
+                }
+            }
+            .excellent{
+                margin-top: 2em;
+                img{
+                    width: 6em;
+                }
+            }
+            h6{
+                color: $color-bac;
+                margin-top: 1em;
+            }
+            #see{
+                @media only screen and (max-width: 768px){
+                    width: 100%;
+                }
+                background: $color-white;
+                border: 2px solid $color-blue;
+                height: 2.5em;
+                width: 12em;
+                border-radius: 4px;
+                color: $color-blue;
+                margin-top: 1em;
+                &:hover{
+                    background: $color-blue;
+                    color: $color-white;
+                }
+            }
+
+        }
+    }
+}
+
+//input group
+#input-group{
+    min-height: 500px;
+    background: $color-bg-hotel;
+    padding-top: 2em;
+    .search{
+        height: 5em;
+        margin: 0 2em;
+        .search-input{
+            margin: 0;
+            padding: 0;
+            input{
+
+                height: 5em;
+                width: 100%;
+                border: none;
+                padding-left: 10px;
+                border-right: 1px solid $color-bg-hotel;
+                @media only screen and (max-width: 575px){
+                    border-right: none;
+                    border-bottom: 1px solid $color-bg-hotel;
+                }
+
+            }
+        }
+        .check-in, .check-out, .room{
+            padding: 0;
+            margin: 0;
+            padding-top: 1em;
+            background: $color-white;
+            text-align: left;
+            border-right: 1px solid $color-bg-hotel;
+            @media only screen and (max-width: 575px){
+                border-right: none;
+                border-bottom: 1px solid $color-bg-hotel;
+            }
+            .my-left{
+                padding: 0;
+                padding-left: 1em;
+            }
+            .my-right{
+                padding: 0;
+                padding: 0 2px;
+            }
+            label{
+                color: $color-bbb;
+                font-size: 12px;
+            }
+            input{
+                width: 100%;
+                border: none;
+                font-size: 0.9em;
+                @media only screen and (max-width: 768px){
+                    font-size: 0.7em;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+            img{
+                width: 1.5em;
+                height: auto;
+                display: block;
+                margin-top: 0.2em;
+            }
+        }
+        .search-button{
+            margin: 0;
+            padding: 0;
+            button{
+                width: 100%;
+            height: 100%;
+            border: none;
+            background: $color-blue;
+            color: $color-white;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            &:hover{
+                background: $color-blue-hover;
+            }
+            }
+        }
+    }
+    .bed{
+        background: wheat;
+        height: 10em;
+        margin: 3em;
+        padding: 1em 0;
     }
 }

@@ -17,7 +17,7 @@
 @mixin sec-list {
     .container{
         h4{
-            color: #ccc;
+            color: $color-star-none;
             font-size: 18px;
             text-align: center;
             margin-bottom: 2em;
@@ -34,5 +34,59 @@
                 margin-bottom: 1em;
             }
         }
+    }
+}
+
+@mixin btn-sign-in{
+    background: $color-white;
+    border: 1px solid $color-brown;
+    width: 9em;
+    color: $color-brown;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    border-radius: 2em;
+    font-weight: 600;
+    &:hover{
+        background: $color-brown;
+        color: $color-white;
+    }
+    //box-shadow: 0px 0px 2px 2px orangered;
+}
+
+@mixin btn-hotel {
+    @media only screen and (max-width: 768px) {
+        font-size: 0.8em !important;
+    }
+    width: 100%;
+    height: 2.5em;
+    font-size: 1.5em;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+//change price button
+@mixin change-price {
+    border: none;
+    background: $color-brown;
+    &:hover{
+        background: $color-black;
+    }
+    span{
+        @media only screen and (max-width: 768px) {
+            font-size: 0.8em !important;
+        }
+
+        font-size: 1.5em;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-right: 0.5em;
+        color: $color-white;
+    }
+    i{
+        color: $color-white;
     }
 }
