@@ -841,6 +841,7 @@ footer {
       border-top-right-radius: 1em;
       border-top-left-radius: 1em; }
     #hotel #input-group .bed .container .row .bed-policy .modal-content {
+      border: none;
       border-top-right-radius: 1em;
       border-top-left-radius: 1em; }
     #hotel #input-group .bed .container .row .bed-policy h5 {
@@ -909,5 +910,105 @@ footer {
     #hotel #input-group .warning p img {
       width: 1.5em;
       height: auto; }
+
+#search-result #search-bar {
+  background: white;
+  margin: 3em 0; }
+  #search-result #search-bar .search {
+    margin: 0 2em;
+    margin: 3em; }
+    @media only screen and (max-width: 768px) {
+      #search-result #search-bar .search {
+        margin: 1em 0.5em; } }
+    #search-result #search-bar .search .search-input {
+      margin: 0;
+      padding: 0; }
+      #search-result #search-bar .search .search-input input {
+        height: 5em;
+        width: 100%;
+        border: none;
+        padding-left: 10px;
+        border-right: 1px solid #F7F7F8; }
+        @media only screen and (max-width: 575px) {
+          #search-result #search-bar .search .search-input input {
+            border-right: none;
+            border-bottom: 1px solid #F7F7F8; } }
+    #search-result #search-bar .search .check-in, #search-result #search-bar .search .check-out, #search-result #search-bar .search .room {
+      padding: 0;
+      margin: 0;
+      padding-top: 1em;
+      background: white;
+      text-align: left;
+      border-right: 1px solid #F7F7F8; }
+      @media only screen and (max-width: 575px) {
+        #search-result #search-bar .search .check-in, #search-result #search-bar .search .check-out, #search-result #search-bar .search .room {
+          border-right: none;
+          border-bottom: 1px solid #F7F7F8; } }
+      #search-result #search-bar .search .check-in .my-left, #search-result #search-bar .search .check-out .my-left, #search-result #search-bar .search .room .my-left {
+        padding: 0;
+        padding-left: 1em; }
+      #search-result #search-bar .search .check-in .my-right, #search-result #search-bar .search .check-out .my-right, #search-result #search-bar .search .room .my-right {
+        padding: 0;
+        padding: 0 2px; }
+      #search-result #search-bar .search .check-in label, #search-result #search-bar .search .check-out label, #search-result #search-bar .search .room label {
+        color: #BBBDBF;
+        font-size: 12px; }
+      #search-result #search-bar .search .check-in input, #search-result #search-bar .search .check-out input, #search-result #search-bar .search .room input {
+        width: 100%;
+        border: none;
+        font-size: 0.9em; }
+        @media only screen and (max-width: 768px) {
+          #search-result #search-bar .search .check-in input, #search-result #search-bar .search .check-out input, #search-result #search-bar .search .room input {
+            font-size: 0.7em; } }
+        #search-result #search-bar .search .check-in input:focus, #search-result #search-bar .search .check-out input:focus, #search-result #search-bar .search .room input:focus {
+          outline: none; }
+      #search-result #search-bar .search .check-in img, #search-result #search-bar .search .check-out img, #search-result #search-bar .search .room img {
+        width: 1.5em;
+        height: auto;
+        display: block;
+        margin-top: 0.2em; }
+    #search-result #search-bar .search .search-button {
+      margin: 0;
+      padding: 0; }
+      #search-result #search-bar .search .search-button button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: #659BD1;
+        color: white;
+        font-size: 1.5em;
+        text-transform: uppercase; }
+        #search-result #search-bar .search .search-button button:hover {
+          background: #4888c8; }
+    #search-result #search-bar .search .search-input input {
+      background: #F7F7F8;
+      border-right: 1px solid white; }
+      @media only screen and (max-width: 575px) {
+        #search-result #search-bar .search .search-input input {
+          border-right: none;
+          border-bottom: 1px solid white; } }
+    #search-result #search-bar .search .check-in, #search-result #search-bar .search .check-out, #search-result #search-bar .search .room {
+      background: #F7F7F8 !important;
+      border-right: 1px solid white; }
+      @media only screen and (max-width: 575px) {
+        #search-result #search-bar .search .check-in, #search-result #search-bar .search .check-out, #search-result #search-bar .search .room {
+          border-right: none;
+          border-bottom: 1px solid white; } }
+      #search-result #search-bar .search .check-in input, #search-result #search-bar .search .check-out input, #search-result #search-bar .search .room input {
+        background: #F7F7F8 !important; }
+#search-result #result-bar {
+  width: 100%;
+  height: 5em;
+  background: #464749;
+  padding: 1.5em 3em;
+  color: white; }
+  #search-result #result-bar span {
+    font-size: 1.5em;
+    text-transform: uppercase; }
+#search-result .refine-search .container .row .refine-left {
+  padding-top: 2em; }
+  #search-result .refine-search .container .row .refine-left nav ol {
+    padding: 0;
+    background: none; }
 
 /*# sourceMappingURL=style.css.map */
