@@ -164,55 +164,7 @@ header{
         vertical-align: baseline !important;
     }
     .section2{
-        margin-top: 2em;
-        .container-section2{
-            width: 90%;
-            margin: 0 auto;
-            .contact{
-                @media only screen and (max-width: 767px){
-                    margin-bottom: 1em;
-                }
-                .contact-now{
-                    margin-top: 1.5em;
-                    text-transform: uppercase;
-                    background: white;
-                    color: $color-blue;
-                    line-height: 1.5em;
-                    width: 13em;
-                    border: 2px solid $color-blue;
-                    border-radius: 2em;
-                    font-size: 12px;
-                    &:hover{
-                        background: $color-blue;
-                        color: $color-white;
-                    }
-                }
-                span::before{
-                    font-size: 3em;
-                }
-                img{
-                    width: 32px;
-                    height: auto;
-                    position: relative;
-                    top: -1.5em;
-                    margin-right: 0.5em;
-                }
-                .contact-content{
-                    display: inline-block;
-                    h5{
-                        strong{
-                            color: $color-blue;
-                            text-transform: uppercase;
-                        }
-                    }
-                    small{
-                        color:$color-blue;
-                        display: block; 
-                    }
-                }
-
-            }
-        }
+        @include section2;
     }
     .section3{
         @include sec-list;
@@ -1361,5 +1313,90 @@ footer{
         font-weight: bold;
         color: gray;
         font-size: 1.5em;
+    }
+}
+
+//contact
+#contact{
+    
+    .contact-us{
+        background: $color-blue;
+        color: $color-white;
+        padding-top: 3em;
+        h1{
+            font-size: 3em;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 1em;
+        }
+        button{
+            display: block;
+            margin: 1em auto;
+            background: $color-blue;
+            padding: 0.5em 2em;
+            border: 2px solid $color-white;
+            border-radius: 0.5em;
+            font-size: 1em;
+            color: $color-white;
+            &:hover{
+                background: $color-white;
+                color: $color-blue;
+            }
+        }
+        a{
+            text-decoration: none;
+            i{
+                display: block;
+                font-size: 2em;
+                margin-top: 2em;
+                color: $color-white;
+            }
+        }
+    }
+    .contact-divider{
+        width: 100%;
+        height: auto;
+    }
+    #meet-team{
+        .section2{
+            @include section2;
+            text-align: center;
+        }
+        .meet-our-team{
+            h1{
+                text-align: center;
+                font-weight: 600;
+                margin: 1em;
+            }
+            .container{
+                .row{
+                    .team-item{
+                        margin-bottom: 2em;
+                        a{
+                            color: $color-black;
+                            text-decoration: none;
+                            background: none;
+                            img{
+                                display: block;
+                                margin: 0 auto;
+                                width: 4em;
+                                height: auto;
+                            }
+                            strong{
+                                display: block;
+                                color: $color-blue;
+                                text-transform: capitalize;
+                                font-weight: 600;
+                                margin-top: 1em;
+                            }
+                            small{
+                                display: block;
+                                color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

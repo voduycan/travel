@@ -1145,6 +1145,7 @@ header #sign-in {
       top: -1.5em;
       margin-right: 0.5em; }
     .panel-home .section2 .container-section2 .contact .contact-content {
+      text-align: left;
       display: inline-block; }
       .panel-home .section2 .container-section2 .contact .contact-content h5 strong {
         color: #659BD1;
@@ -2146,5 +2147,100 @@ footer {
     font-weight: bold;
     color: gray;
     font-size: 1.5em; }
+
+#contact .contact-us {
+  background: #659BD1;
+  color: white;
+  padding-top: 3em; }
+  #contact .contact-us h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 1em; }
+  #contact .contact-us button {
+    display: block;
+    margin: 1em auto;
+    background: #659BD1;
+    padding: 0.5em 2em;
+    border: 2px solid white;
+    border-radius: 0.5em;
+    font-size: 1em;
+    color: white; }
+    #contact .contact-us button:hover {
+      background: white;
+      color: #659BD1; }
+  #contact .contact-us a {
+    text-decoration: none; }
+    #contact .contact-us a i {
+      display: block;
+      font-size: 2em;
+      margin-top: 2em;
+      color: white; }
+#contact .contact-divider {
+  width: 100%;
+  height: auto; }
+#contact #meet-team .section2 {
+  margin-top: 2em;
+  text-align: center; }
+  #contact #meet-team .section2 .container-section2 {
+    width: 90%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 767px) {
+      #contact #meet-team .section2 .container-section2 .contact {
+        margin-bottom: 1em; } }
+    #contact #meet-team .section2 .container-section2 .contact .contact-now {
+      margin-top: 1.5em;
+      text-transform: uppercase;
+      background: white;
+      color: #659BD1;
+      line-height: 1.5em;
+      width: 13em;
+      border: 2px solid #659BD1;
+      border-radius: 2em;
+      font-size: 12px; }
+      #contact #meet-team .section2 .container-section2 .contact .contact-now:hover {
+        background: #659BD1;
+        color: white; }
+    #contact #meet-team .section2 .container-section2 .contact span::before {
+      font-size: 3em; }
+    #contact #meet-team .section2 .container-section2 .contact img {
+      width: 32px;
+      height: auto;
+      position: relative;
+      top: -1.5em;
+      margin-right: 0.5em; }
+    #contact #meet-team .section2 .container-section2 .contact .contact-content {
+      text-align: left;
+      display: inline-block; }
+      #contact #meet-team .section2 .container-section2 .contact .contact-content h5 strong {
+        color: #659BD1;
+        text-transform: uppercase; }
+      #contact #meet-team .section2 .container-section2 .contact .contact-content small {
+        color: #659BD1;
+        display: block; }
+#contact #meet-team .meet-our-team h1 {
+  text-align: center;
+  font-weight: 600;
+  margin: 1em; }
+#contact #meet-team .meet-our-team .container .row .team-item {
+  margin-bottom: 2em; }
+  #contact #meet-team .meet-our-team .container .row .team-item a {
+    color: black;
+    text-decoration: none;
+    background: none; }
+    #contact #meet-team .meet-our-team .container .row .team-item a img {
+      display: block;
+      margin: 0 auto;
+      width: 4em;
+      height: auto; }
+    #contact #meet-team .meet-our-team .container .row .team-item a strong {
+      display: block;
+      color: #659BD1;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-top: 1em; }
+    #contact #meet-team .meet-our-team .container .row .team-item a small {
+      display: block;
+      color: #659BD1; }
 
 /*# sourceMappingURL=main.css.map */

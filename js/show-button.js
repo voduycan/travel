@@ -69,6 +69,8 @@ $(document).ready(function(){
     });
 });
 
+
+
     $('#str-5').hover(function(){
         $('#str-5').addClass('str-gold');
         $('#str-4').addClass('str-gold');
@@ -127,21 +129,7 @@ $(document).ready(function(){
         str3 = false;
         str2 = true;
     });
-    if(str5){
-        str5_show();
-    }
-    if(str4){
-        str4_show();
-    }
-    if(str3){
-        str3_show();
-    }
-    if(str2){
-        str2_show();
-    }
-    if(str1){
-        str1_show();
-    }
+    
     function str5_show(){
         $('#str-5').addClass('str-gold');
         $('#str-4').addClass('str-gold');
@@ -171,6 +159,22 @@ $(document).ready(function(){
         $('#str-4').removeClass('str-gold');
         $('#str-3').removeClass('str-gold');
         $('#str-2').removeClass('str-gold');
+    }
+    
+    if(str5){
+        str5_show();
+    }
+    if(str4){
+        str4_show();
+    }
+    if(str3){
+        str3_show();
+    }
+    if(str2){
+        str2_show();
+    }
+    if(str1){
+        str1_show();
     }
 
 

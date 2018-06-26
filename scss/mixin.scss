@@ -172,3 +172,55 @@
         }
     }
 }   
+@mixin section2 {
+    margin-top: 2em;
+        .container-section2{
+            width: 90%;
+            margin: 0 auto;
+            .contact{
+                @media only screen and (max-width: 767px){
+                    margin-bottom: 1em;
+                }
+                .contact-now{
+                    margin-top: 1.5em;
+                    text-transform: uppercase;
+                    background: white;
+                    color: $color-blue;
+                    line-height: 1.5em;
+                    width: 13em;
+                    border: 2px solid $color-blue;
+                    border-radius: 2em;
+                    font-size: 12px;
+                    &:hover{
+                        background: $color-blue;
+                        color: $color-white;
+                    }
+                }
+                span::before{
+                    font-size: 3em;
+                }
+                img{
+                    width: 32px;
+                    height: auto;
+                    position: relative;
+                    top: -1.5em;
+                    margin-right: 0.5em;
+                }
+                .contact-content{
+                    text-align: left;
+                    display: inline-block;
+                    h5{
+                        strong{
+                            color: $color-blue;
+                            text-transform: uppercase;
+                        }
+                    }
+                    small{
+                        color:$color-blue;
+                        display: block; 
+                    }
+                }
+
+            }
+        }
+}
