@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="scss/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+      
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="#">
+                 <img id="logo-big" src="./assets/logo.svg" alt="logo">
+                 <img id="logo-small" src="./assets/logo-icon.svg" alt="logo">
+     
+             </a>
+             <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                 aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">HOW TO</a>
+                        </li>
+                        <li class="nav-item hide-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                        <li class="nav-item hide-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+                        <li class="nav-item dropdown hide-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MORE</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">FAQs</a>
+                                <a class="dropdown-item" href="#">CONTACT US</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./assets/icons/phone-outline.svg" alt="" width="15px"></span>1300 49 30 50</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="submit" class="btn" id="sign-in">Sign in</button>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+         </nav>
+         <form id="form-sign-in">
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <button type="submit" class="btn form-btn">Sign in</button>
+            <a href="">Sign up</a>
+          </form>
+    </header>
+
+    <!---->
+    <section class="processing">
+       <div class="container text-center">
+        <h1><strong>Processing your Booking</strong></h1>
+        <h4><strong>please wait, it may take up to 2 minutes</strong></h4>
+        <div class="loading">
+            <img src="./assets/loading.svg" alt="">
+        </div>
+       </div>   
+       
+    </section>
+    <div class="diviver-processing">
+        <img src="./assets/divider-2.svg" alt="">
+    </div>
+    <footer>
+        <div class="my-container">
+            <div class="row">
+                <div class="col-md-2 footer-item logo">
+                    <img src="./assets/logo.svg" alt="">
+                </div>
+                <div class="col-md-3 footer-item address">
+                    <ul>
+                        <li>sales@travelwards.com</li>
+                        <li>support@travelwards.com</li>
+                        <li>1300 49 30 50</li>
+                        <li>+61 3 8899 7599 (AUS)</li>
+                        <li>+1 (201) 365 9900 (USA)</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6 footer-item menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">How to</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Sign in</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 footer-item policy">
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 footer-item contact">
+                    <div class="row">
+                        <div class="col-md-7 contact-left">
+                            <span>Sydney, NSW</span>
+                            <span>Australia</span>
+                        </div>
+                        <div class="col-md-5 contact-right">
+                            <img src="./assets/icons/location.svg" alt="">
+                        </div>
+                        <div class="col-md-12 col-12 social">
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-instagram.png" alt=""></a>
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-twitter.png" alt=""></a>
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-linkedin.png" alt=""></a>
+                           <a href="" class="mr-2 social-item"><img src="./assets/icons/social-facebook.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="js/scroll.js"></script>
+    <script src="js/show-button.js"></script>
+    <script type="text/javascript">
+       
+    </script>
+</body>
+</html>

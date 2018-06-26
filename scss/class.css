@@ -35,4 +35,13 @@
 .btn-hide {
   display: none !important; }
 
+.str-gold {
+  color: #F5AC5F !important; }
+
+.str-none {
+  color: #ccc; }
+
+.color-red {
+  color: red !important; }
+
 /*# sourceMappingURL=class.css.map */

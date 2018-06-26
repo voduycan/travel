@@ -125,19 +125,316 @@
             </div>
         </section>
         <section class="refine-search">
-            <div class="container">
+            <div class= "refine-container">
                 <div class="row">
                     <div class="col-12 col-sm-4 refine-left">
-                        <h3>refine search</h3>
+                        <h4>refine search</h4>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="#">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Hotel in Singapore</li>
+                              <li class="breadcrumb-item" aria-current="page">Hotel in Singapore</li>
                             </ol>
-                          </nav>
+                        </nav>
+                       <div class="btn-group best-margin">
+                           <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                       Best margin
+                           </button>
+                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="triggerId">
+                               <a class="dropdown-item" href="#">Action</a>
+                               <a class="dropdown-item" href="#">Action</a>
+                               <a class="dropdown-item" href="#">After divider action</a>
+                           </div>
+                        </div>
+                        <h4><strong>budget</strong></h4>
+                        <div class="well">
+                                <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="150" data-slider-max="1500" data-slider-step="10" data-slider-value="500"
+                                />
+                                <div class="range">
+                                    <span>150AUD</span>
+                                    <span>1500AUD</span>
+                                </div>
+                        </div>
+                        <div class="rating">
+                            <h5 class="rating">rating</h5>
+                            <i class="fas fa-star str" id="str-1"></i>
+                            <i class="far fa-star str" id="str-2"></i>
+                            <i class="far fa-star str" id="str-3"></i>
+                            <i class="far fa-star str" id="str-4"></i>
+                            <i class="far fa-star str" id="str-5"></i>
+                        </div>
+                        <div class="trust-rating">
+                            <img src="./assets/trust-you.svg" alt="">
+                            <button class="rating-btn"  id="poor">poor</button>
+                            <button class="rating-btn"  id="fair">fair</button>
+                            <button class="rating-btn"  id="good">good</button>
+                            <button class="rating-btn"  id="very-good">very good</button>
+                            <button class="rating-btn"  id="excellent">excellent</button>
+                        </div>
+                        <div class="amenities">
+                            <h5>amenities</h5>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                        gym
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    out door pool
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    noon-smoking room
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    AIRPORT TRANSPORTATION
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    MEETING ROOM
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    BUSINESS CENTER
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    INDOOR POOL
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    AIR-CONDITIONING
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    ROOM SERVICE
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    FAMILY ROOMS
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    <small>Remove Preselected filters</small>
+                                </label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-8">
-                        aaa
+                    <div class="col-12 col-sm-8 refine-right">
+                        <div class="row refine-row">
+                            <div class="col-12 col-sm-4 refine-right-1">
+                                <img src="./assets/others/room-image.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-4 refine-right-2">
+                                <h4>bay hotel singapore</h4>
+                                <h6>2km from Singapore</h6>
+                                <div class="row excellent">
+                                    <div class="col-6 col-sm-6 row ex-left">
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-12 col-sm-12 star-sliver ">
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 row ex-right">
+                                        <p class="text-success"><strong>excellent 89.0</strong></p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 ex-icon">
+                                        <img src="./assets/icons/fac-air-conditioning.svg" alt="">
+                                        <img src="./assets/icons/fac-gym.svg" alt="">
+                                        <img src="./assets/icons/fac-outdoor-pool.svg" alt="">
+                                    </div>
+                                    <div class="col-12 col-sm-12 ex-text">
+                                        <h5>you make a profit of <span>$212</span> for the stay, and <span>$106</span> per night at a 26% margin.</h5>
+                                        <small>Remember, you can always change the price you charge the customer, to price match or increase margin</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 refine-right-3">
+                                <div class="row right-3-row">
+                                    <div class="col-6 col-sm-6 text-center r3-item suggested ">
+                                        <strong>$407</strong>
+                                        <small>suggested rate</small>
+                                    </div>
+                                    <div class="col-6 col-sm-6 text-center r3-item expedia">
+                                        <strong>$407</strong>
+                                        <small>Expedia</small>
+                                    </div>
+                                    <div class="col-12 col-sm-12 text-center r3-item com">
+                                        <strong>$428</strong>
+                                        <small>Booking.com</small>
+                                    </div>
+                                    <div class="col-12 col-sm-12 text-center r3-btn">
+                                        <strong>$407</strong><span>aud</span>
+                                        <small>for one night</small>
+                                        <button class="view-room">View room</button>
+                                    </div>
+                                    <div class="col-6 col-sm-6 r3-bottom text-center">
+                                        <strong>$301</strong>
+                                        <small>Net Rate Night</small>
+                                    </div>
+                                    <div class="col-6 col-sm-6 r3-bottom text-center">
+                                        <strong>$602</strong>
+                                        <small>Total Net Rate</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                         <div class="row refine-row">
+                            <div class="col-12 col-sm-4 refine-right-1">
+                                <img src="./assets/others/room-image.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-4 refine-right-2">
+                                <h4>bay hotel singapore</h4>
+                                <h6>2km from Singapore</h6>
+                                <div class="row excellent">
+                                    <div class="col-6 col-sm-6 row ex-left">
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-12 col-sm-12 star-sliver ">
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 row ex-right">
+                                        <p class="text-success"><strong>excellent 89.0</strong></p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 ex-icon">
+                                        <img src="./assets/icons/fac-air-conditioning.svg" alt="">
+                                        <img src="./assets/icons/fac-gym.svg" alt="">
+                                        <img src="./assets/icons/fac-outdoor-pool.svg" alt="">
+                                    </div>
+                                    <div class="col-12 col-sm-12 ex-text">
+                                        <h5>you make a profit of <span>$212</span> for the stay, and <span>$106</span> per night at a 26% margin.</h5>
+                                        <small>Remember, you can always change the price you charge the customer, to price match or increase margin</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 refine-right-3">
+                                <div class="row right-3-row">
+                                    <div class="col-6 col-sm-6 text-center r3-item suggested ">
+                                        <strong>$407</strong>
+                                        <small>suggested rate</small>
+                                    </div>
+                                    <div class="col-6 col-sm-6 text-center r3-item expedia">
+                                        <strong>$407</strong>
+                                        <small>Expedia</small>
+                                    </div>
+                                    <div class="col-12 col-sm-12 text-center r3-item com">
+                                        <strong>$428</strong>
+                                        <small>Booking.com</small>
+                                    </div>
+                                    <div class="col-12 col-sm-12 text-center r3-btn">
+                                        <strong>$801</strong><span>aud</span>
+                                        <small>for one night</small>
+                                        <button class="view-room">View room</button>
+                                    </div>
+                                    <div class="col-6 col-sm-6 r3-bottom text-center">
+                                        <strong>$301</strong>
+                                        <small>Net Rate Night</small>
+                                    </div>
+                                    <div class="col-6 col-sm-6 r3-bottom text-center">
+                                        <strong>$602</strong>
+                                        <small>Total Net Rate</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                         <div class="row refine-row">
+                            <div class="col-12 col-sm-4 refine-right-1">
+                                <img src="./assets/others/room-image.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-sm-4 refine-right-2">
+                                <h4>bay hotel singapore</h4>
+                                <h6>2km from Singapore</h6>
+                                <div class="row excellent">
+                                    <div class="col-6 col-sm-6 row ex-left">
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-3 col-sm-6 col-md-3 star-gold">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="col-12 col-sm-12 star-sliver ">
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 row ex-right">
+                                        <p class="text-success"><strong>excellent 89.0</strong></p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 ex-icon">
+                                        <img src="./assets/icons/fac-air-conditioning.svg" alt="">
+                                        <img src="./assets/icons/fac-gym.svg" alt="">
+                                        <img src="./assets/icons/fac-outdoor-pool.svg" alt="">
+                                    </div>
+                                    <div class="col-12 col-sm-12 ex-text">
+                                        <h5>you make a profit of <span>$212</span> for the stay, and <span>$106</span> per night at a 26% margin.</h5>
+                                        <small>Remember, you can always change the price you charge the customer, to price match or increase margin</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-4 refine-right-3">
+                                <div class="row right-3-row">
+                                    <div class="col-6 col-sm-6 text-center r3-item suggested ">
+                                        <strong>$407</strong>
+                                        <small>suggested rate</small>
+                                    </div>
+                                    <div class="col-6 col-sm-6 text-center r3-item expedia">
+                                        <strong>$407</strong>
+                                        <small>Expedia</small>
+                                    </div>
+                                    <div class="col-12 col-sm-12 text-center r3-item com">
+                                        <strong>$428</strong>
+                                        <small>Booking.com</small>
+                                    </div>
+                                    <div class="col-12 col-sm-12 text-center r3-btn">
+                                        <strong>$407</strong><span>aud</span>
+                                        <small>for one night</small>
+                                        <button class="view-room">View room</button>
+                                    </div>
+                                    <div class="col-6 col-sm-6 r3-bottom text-center">
+                                        <strong>$301</strong>
+                                        <small>Net Rate Night</small>
+                                    </div>
+                                    <div class="col-6 col-sm-6 r3-bottom text-center">
+                                        <strong>$602</strong>
+                                        <small>Total Net Rate</small>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,5 +507,14 @@
     <script type="text/javascript">
        
     </script>
+    <script>
+            $(document).ready(function(){
+                $('#ex1').slider({
+                    formatter: function(value) {
+                        return value + 'AUD' ;
+                    }
+                });
+            });
+        </script>
 </body>
 </html>
