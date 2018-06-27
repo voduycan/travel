@@ -44,4 +44,9 @@
 .color-red {
   color: red !important; }
 
+.btn-bg-blue {
+  background: #659BD1 !important;
+  color: white !important;
+  border: 1px solid #659BD1 !important; }
+
 /*# sourceMappingURL=class.css.map */

@@ -46,3 +46,8 @@
 .color-red{
     color: red !important;
 }
+.btn-bg-blue{
+    background: $color-blue !important;
+    color: $color-white !important;
+    border: 1px solid  $color-blue !important;
+}

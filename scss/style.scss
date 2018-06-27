@@ -1320,38 +1320,7 @@ footer{
 #contact{
     
     .contact-us{
-        background: $color-blue;
-        color: $color-white;
-        padding-top: 3em;
-        h1{
-            font-size: 3em;
-            font-weight: 600;
-            text-transform: capitalize;
-            margin-bottom: 1em;
-        }
-        button{
-            display: block;
-            margin: 1em auto;
-            background: $color-blue;
-            padding: 0.5em 2em;
-            border: 2px solid $color-white;
-            border-radius: 0.5em;
-            font-size: 1em;
-            color: $color-white;
-            &:hover{
-                background: $color-white;
-                color: $color-blue;
-            }
-        }
-        a{
-            text-decoration: none;
-            i{
-                display: block;
-                font-size: 2em;
-                margin-top: 2em;
-                color: $color-white;
-            }
-        }
+        @include mixin-contact;
     }
     .contact-divider{
         width: 100%;
@@ -1392,6 +1361,129 @@ footer{
                             small{
                                 display: block;
                                 color: $color-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//search
+#search-bar{
+    .search-title{
+        margin: 3em 2em;
+        h1{
+            font-size: 3.5em;
+            font-weight: 600;
+            color: $color-blue;
+        }
+        h5{
+            font-size: 1.8em;
+            font-weight: bold;
+            color: $color-black-05;
+        }
+    }
+    .search{
+        margin-bottom: 1em;
+        @include search-mixin;
+        .search-input{
+            input{
+                background: $color-bg-hotel;
+                border-right: 1px solid $color-white;
+                @media only screen and (max-width: 575px){
+                    border-right: none;
+                    border-bottom: 1px solid $color-white;
+        }
+            }
+        }
+        .check-in, .check-out, .room{
+            background: $color-bg-hotel !important;
+            border-right: 1px solid $color-white;
+            @media only screen and (max-width: 575px){
+                border-right: none;
+                border-bottom: 1px solid $color-white;
+            }
+            input{
+                background: $color-bg-hotel !important;
+            }
+        }
+    }
+    .search-select{
+        margin: 2em;
+        .row{
+            .select-star{
+                margin-bottom: 1em;
+                button{
+                    margin: 0.1em; 
+                    color: $color-btn-default;
+                    background: white;
+                    border: 1px solid $border-btn-default;
+                    border-radius: 4px;
+                    padding: 0.1em 0.6em;
+                    i{
+                        color: $color-star-gold;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+    .search-radio{
+        margin-bottom: 1em;
+        .form-check{
+            label{
+                font-weight: 600;
+                color: $color-black-05;
+            }
+        }
+    }
+}
+
+//faq
+#faq{
+    .contact-us{
+        @include mixin-contact;
+    }
+    .contact-divider{
+        width: 100%;
+        height: auto;
+    }
+    #collapse-menu{
+        padding: 2em;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                a{
+                    color: $color-black;
+                    background: none;
+                    font-size: 2em;
+                    font-weight: 600;
+                    &:focus{
+                        color: $color-blue;
+                    }
+                }
+            }
+        }
+        #pills-tabContent{
+            .tab-pane{
+                div{
+                    .card{
+                        border-right: none;
+                        border-left: none;
+                        .card-header{
+                            background: none;
+                            &:hover{
+                                background: $color-light;
+                            }
+                            h5{
+                                font-size: 3em;
+                                button{
+                                    text-decoration: none;
+                                    color: $color-black;
+                                }
                             }
                         }
                     }
