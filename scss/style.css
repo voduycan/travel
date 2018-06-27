@@ -1208,7 +1208,8 @@ footer {
       display: block;
       font-size: 2em;
       margin-top: 2em;
-      color: white; }
+      color: white;
+      margin-bottom: -1px; }
 #contact .contact-divider {
   width: 100%;
   height: auto; }
@@ -1418,7 +1419,8 @@ footer {
       display: block;
       font-size: 2em;
       margin-top: 2em;
-      color: white; }
+      color: white;
+      margin-bottom: -1px; }
 #faq .contact-divider {
   width: 100%;
   height: auto; }
@@ -1434,6 +1436,13 @@ footer {
       font-weight: 600; }
       #faq #collapse-menu .row div ul li a:focus {
         color: #659BD1; }
+      @media only screen and (max-width: 767px) {
+        #faq #collapse-menu .row div ul li a {
+          font-size: 1.5em;
+          padding: 0; } }
+      @media only screen and (max-width: 375px) {
+        #faq #collapse-menu .row div ul li a {
+          font-size: 1em; } }
   #faq #collapse-menu .row div #pills-tabContent .tab-pane div .card {
     border-right: none;
     border-left: none; }
