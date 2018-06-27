@@ -1452,43 +1452,76 @@ footer{
     }
     #collapse-menu{
         padding: 2em;
-        ul{
-            display: flex;
-            justify-content: space-between;
-            li{
-                a{
-                    color: $color-black;
-                    background: none;
-                    font-size: 2em;
-                    font-weight: 600;
-                    &:focus{
-                        color: $color-blue;
+        .row{
+            div{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        a{
+                            color: $color-black;
+                            background: none;
+                            font-size: 2em;
+                            font-weight: 600;
+                            &:focus{
+                                color: $color-blue;
+                            }
+                        }
                     }
                 }
-            }
-        }
-        #pills-tabContent{
-            .tab-pane{
-                div{
-                    .card{
-                        border-right: none;
-                        border-left: none;
-                        .card-header{
-                            background: none;
-                            &:hover{
-                                background: $color-light;
-                            }
-                            h5{
-                                font-size: 3em;
-                                button{
-                                    text-decoration: none;
-                                    color: $color-black;
+                #pills-tabContent{
+                    .tab-pane{
+                        div{
+                            .card{
+                                border-right: none;
+                                border-left: none;
+                                .card-header{
+                                    padding: .75rem 0;
+                                    background: none;
+                                    &:hover{
+                                        background: $color-light;
+                                    }
+                                    h5{
+                                        font-size: 3em;
+                                        button{
+                                            text-decoration: none;
+                                            color: $color-black;
+                                            word-break: break-word;
+                                            word-wrap: break-word;
+                                            white-space: normal;
+                                            text-align: left;
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
+        }
+    }
+    .search-bottom{
+        margin: 2em 0 3em 0;
+        h2{
+            font-weight: 900;
+        }
+        .bottom-btn{
+            color: $color-blue;
+            border: 2px solid $color-blue;
+            background: $color-white;
+            border-radius: 4px;
+            padding: 0.4em 2em;
+            margin: 1em 0;
+            &:hover{
+                background: $color-blue;
+                color: $color-white;
+            }
+        }
+        span{
+            font-size: 2em;
+        }
+        small{
+            display: block;
         }
     }
 }

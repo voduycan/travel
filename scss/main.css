@@ -2402,27 +2402,50 @@ footer {
   height: auto; }
 #faq #collapse-menu {
   padding: 2em; }
-  #faq #collapse-menu ul {
+  #faq #collapse-menu .row div ul {
     display: flex;
     justify-content: space-between; }
-    #faq #collapse-menu ul li a {
+    #faq #collapse-menu .row div ul li a {
       color: black;
       background: none;
       font-size: 2em;
       font-weight: 600; }
-      #faq #collapse-menu ul li a:focus {
+      #faq #collapse-menu .row div ul li a:focus {
         color: #659BD1; }
-  #faq #collapse-menu #pills-tabContent .tab-pane div .card {
+  #faq #collapse-menu .row div #pills-tabContent .tab-pane div .card {
     border-right: none;
     border-left: none; }
-    #faq #collapse-menu #pills-tabContent .tab-pane div .card .card-header {
+    #faq #collapse-menu .row div #pills-tabContent .tab-pane div .card .card-header {
+      padding: .75rem 0;
       background: none; }
-      #faq #collapse-menu #pills-tabContent .tab-pane div .card .card-header:hover {
+      #faq #collapse-menu .row div #pills-tabContent .tab-pane div .card .card-header:hover {
         background: #F5F9FC; }
-      #faq #collapse-menu #pills-tabContent .tab-pane div .card .card-header h5 {
+      #faq #collapse-menu .row div #pills-tabContent .tab-pane div .card .card-header h5 {
         font-size: 3em; }
-        #faq #collapse-menu #pills-tabContent .tab-pane div .card .card-header h5 button {
+        #faq #collapse-menu .row div #pills-tabContent .tab-pane div .card .card-header h5 button {
           text-decoration: none;
-          color: black; }
+          color: black;
+          word-break: break-word;
+          word-wrap: break-word;
+          white-space: normal;
+          text-align: left; }
+#faq .search-bottom {
+  margin: 2em 0 3em 0; }
+  #faq .search-bottom h2 {
+    font-weight: 900; }
+  #faq .search-bottom .bottom-btn {
+    color: #659BD1;
+    border: 2px solid #659BD1;
+    background: white;
+    border-radius: 4px;
+    padding: 0.4em 2em;
+    margin: 1em 0; }
+    #faq .search-bottom .bottom-btn:hover {
+      background: #659BD1;
+      color: white; }
+  #faq .search-bottom span {
+    font-size: 2em; }
+  #faq .search-bottom small {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
